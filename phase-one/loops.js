@@ -1,5 +1,7 @@
+console.log(" ");
+console.log("Even Odd Loop from 0 to 10 using a while loop");
 let i = 0;
-while (i <= 20) {
+while (i <= 10) {
   if (i % 2 == 0) {
     console.log(i + " is even");
     i++;
@@ -9,7 +11,9 @@ while (i <= 20) {
   }
 }
 
-for (let n = 0; n <= 20; n++) {
+console.log(" ");
+console.log("Even Odd Loop from 0 to 10 using a for loop");
+for (let n = 0; n <= 10; n++) {
   if (n % 2 == 0) {
     console.log(n + " is even");
   } else {
@@ -35,5 +39,6 @@ const fizzbuzzUntil = (num) => {
     }
   }
 };
-
+console.log(" ");
+console.log("A FizzBuzz loop from 0 to 10 using a while loop");
 console.log(fizzbuzzUntil(10));
