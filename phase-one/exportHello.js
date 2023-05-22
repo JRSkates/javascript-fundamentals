@@ -1,3 +1,3 @@
 const hello = require('./sayHello');
 
-hello();
+console.log(hello('Jack'));
