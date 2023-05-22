@@ -9,16 +9,16 @@ const transform = (message, lowerCaseFunction) => {
 console.log(transform('WHY ARE YOU SHOUTING', lowerCaseMessage));
 
 const notifyByEmail = (email) => {
-  return 'Email sent to ' + email
+  return `Email sent to ${email}`;
 };
 
-const notifyByText = (text) => {
-  return 'Text sent to ' + text
+const notifyByText = (phoneNumber) => {
+  return `Text sent to ${phoneNumber}`;
 };
 
 const notify = (string, notifyFunction) => {
   return notifyFunction(string);
-}
+};
 
 console.log(notify('hello@makers.tech.test', notifyByEmail));
 console.log(notify('+10000000000', notifyByText));
