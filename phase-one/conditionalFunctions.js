@@ -1,10 +1,10 @@
 const getNumberSign = (num) => {
   if (num === 0) {
-    return 'zero';
+    return "zero";
   } else if (num < 0) {
-    return 'negative';
+    return "negative";
   } else {
-    return 'positive';
+    return "positive";
   }
 };
 
@@ -19,19 +19,18 @@ const isValidLength = (phoneNumber) => {
   } else {
     return false;
   }
-}
+};
 
-console.log(isValidLength('00'));
-console.log(isValidLength('00112233445'));
-
+console.log(isValidLength("00"));
+console.log(isValidLength("00112233445"));
 
 const fizzBuzz = (num) => {
   if (num % 15 == 0) {
-    return 'FizzBuzz';
+    return "FizzBuzz";
   } else if (num % 5 == 0) {
-    return 'Buzz';
+    return "Buzz";
   } else if (num % 3 == 0) {
-    return 'Fizz';
+    return "Fizz";
   } else {
     return num;
   }
@@ -43,4 +42,3 @@ console.log(fizzBuzz(8));
 console.log(fizzBuzz(15));
 console.log(fizzBuzz(18));
 console.log(fizzBuzz(20));
-

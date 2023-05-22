@@ -1,3 +1,3 @@
-const hello = require('./sayHello');
+const hello = require("./sayHello");
 
-console.log(hello('Jack'));
+console.log(hello("Jack"));
