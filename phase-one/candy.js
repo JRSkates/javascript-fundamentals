@@ -4,18 +4,18 @@ class Candy {
     this.price = price;
   }
 
-  getName() { 
-    return this.brand
+  getName() {
+    return this.brand;
   }
 
   getPrice() {
-    return this.price
+    return this.price;
   }
-};
+}
 
-const firstCandy = new Candy('Mars', 4.99);
+const firstCandy = new Candy("Mars", 4.99);
 
 console.log(firstCandy.getName());
-console.log(firstCandy.getPrice()); 
+console.log(firstCandy.getPrice());
 
 module.exports = Candy;
