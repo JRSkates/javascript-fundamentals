@@ -9,6 +9,10 @@ const isShortedThanThree = (element) => {
 };
 
 const namesShorterThanThree = names.filter(isShortedThanThree);
+
+console.log(' ')
+console.log('using the filter function on an array, with another created function as an argument')
+console.log('this created function iterates over the array and returns true if the element is shorter than 3')
 console.log(namesShorterThanThree);
 
 const getUppercased = (element) => {

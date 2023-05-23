@@ -4,6 +4,7 @@ require("./multiply");
 require("./fizzBuzz");
 require("./loops");
 require("./functionsAsValues");
+require("./arrayOperations");
 require("./callbacks.js");
 
 //hello();
