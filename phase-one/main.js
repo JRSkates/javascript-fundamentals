@@ -6,6 +6,7 @@ require("./loops");
 require("./functionsAsValues");
 require("./arrayOperations");
 require("./callbacks.js");
+require("./shoppingBasket");
 
 //hello();
 //console.log('')

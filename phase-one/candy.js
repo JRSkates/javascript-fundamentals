@@ -15,7 +15,7 @@ class Candy {
 
 const firstCandy = new Candy("Mars", 4.99);
 
-console.log(firstCandy.getName());
-console.log(firstCandy.getPrice());
+//console.log(firstCandy.getName());
+//console.log(firstCandy.getPrice());
 
 module.exports = Candy;
