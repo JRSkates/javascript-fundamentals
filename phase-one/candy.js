@@ -1,11 +1,11 @@
 class Candy {
-  constructor(brand, price) {
-    this.brand = brand;
+  constructor(name, price) {
+    this.name = name;
     this.price = price;
   }
 
   getName() {
-    return this.brand;
+    return this.name;
   }
 
   getPrice() {
@@ -17,5 +17,5 @@ const firstCandy = new Candy("Mars", 4.99);
 
 //console.log(firstCandy.getName());
 //console.log(firstCandy.getPrice());
-
+console.log(firstCandy);
 module.exports = Candy;
