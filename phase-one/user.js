@@ -16,6 +16,7 @@ module.exports = User;
 
 const jack = new User("Jack");
 console.log(jack.getName());
+console.log(jack.name);
 console.log(jack.getIntroduction());
 
 const users = [new User("Uma"), new User("Josh"), new User("Ollie")];
@@ -30,7 +31,7 @@ class UserBase {
   }
 
   getNames() {
-    this.users.map((element) => element.getName());
+    console.log(this.users.map((element) => element.getName()));
   }
 
   getIntroductions() {
@@ -38,7 +39,7 @@ class UserBase {
       console.log(`Hi, my name is ${element.name}`)
     );
   }
-}
+};
 
 const usersObject = new UserBase(users);
 console.log(usersObject.count());
