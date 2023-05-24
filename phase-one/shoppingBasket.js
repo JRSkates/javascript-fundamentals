@@ -3,6 +3,12 @@ const Candy = require("./candy");
 class ShoppingBasket {
   constructor(total) {
     this.total = 0.0;
+    this.discount = 0.0;
+  }
+
+  applyDiscount(discount) {
+    this.discount = discount
+    this.total -= discount
   }
 
   getTotalPrice() {
@@ -10,20 +16,21 @@ class ShoppingBasket {
   }
 
   addItem(candy) {
-    this.total += candy.price; 
+    this.total += candy.getPrice(); 
   }
 
 }
 
-const bask = new ShoppingBasket();
-console.log(bask.getTotalPrice());
-const firstCandy = new Candy("Mars", 4.99);
-
-console.log(firstCandy.getName());
-console.log(firstCandy.getPrice());
-bask.addItem(firstCandy);
-console.log(bask.getTotalPrice())
-bask.addItem(firstCandy);
-console.log(bask.getTotalPrice())
-
 module.exports = ShoppingBasket;
+
+// const bask = new ShoppingBasket();
+// console.log(bask.getTotalPrice());
+// const firstCandy = new Candy("Mars", 4.99);
+// 
+// console.log(firstCandy.getName());
+// console.log(firstCandy.getPrice());
+// bask.addItem(firstCandy);
+// console.log(bask.getTotalPrice())
+// bask.addItem(firstCandy);
+// console.log(bask.getTotalPrice())
+// 
