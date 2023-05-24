@@ -1,7 +1,7 @@
 const Candy = require("./candy");
 
 class ShoppingBasket {
-  constructor(total) {
+  constructor() {
     this.total = 0.0;
     this.discount = 0.0;
   }
