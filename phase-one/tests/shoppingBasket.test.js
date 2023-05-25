@@ -1,4 +1,4 @@
-const ShoppingBasket = require('./shoppingBasket');
+const ShoppingBasket = require('../shoppingBasket');
 
 describe('Shopping Basket', () => {
   it('should construct properly', () => {

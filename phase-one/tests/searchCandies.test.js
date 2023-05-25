@@ -1,4 +1,4 @@
-const searchCandies = require('./searchCandies');
+const searchCandies = require('../searchCandies');
 
 describe('searchCandies function', () => {
   it('should return Mars and Maltesers when given "Ma" 10' , () => {
