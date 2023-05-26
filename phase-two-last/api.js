@@ -24,10 +24,12 @@ const fetchPokemon = (pokeName) => {
 };
 
 const showPokemon = (name) => {
-  fetchPokemon(name).then((pokemon) => console.log(pokemon));
+  let poke = fetchPokemon(name).then((pokemon) => console.log(pokemon));
+  return poke
 }
 
-showPokemon('pikachu')
+// showPokemon('pikachu')
 // { name: 'pikachu', id: 25, height: 4, weight: 60, type: [ 'electric' ] }
 
 module.exports = fetchPokemon;
+module.exports.showPokemon;
