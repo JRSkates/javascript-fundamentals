@@ -6,10 +6,27 @@ const apiUrl = `http://api.openweathermap.org/data/2.5/weather?units=metric&q=${
 
 let weatherData = null;
 
-fetch(apiUrl)
-  .then((response) => response.json())
-  .then((weatherData) => {
-    console.log(weatherData)
-  });
+const extractWeather = (data) => {
+  const weather = {};
+  
+  weather.id = data.id;
+  weather.main = data.main;
+  weather.weather = data.weather[0];
 
-console.log('Requesting weather data');
+  return weather;
+}
+
+const weatherUpdate = () =>{ 
+  fetch(apiUrl)
+  .then((response) => {
+    return response.json();
+  })  
+  .then((data) => {
+    return extractWeather(data)
+  })
+  .then((weather) => {
+    console.log(weather);
+  });
+}
+
+weatherUpdate();
